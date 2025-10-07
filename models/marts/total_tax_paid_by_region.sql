@@ -1,12 +1,18 @@
+{{ config(
+    access = 'public',
+    catalog_name = 'iceberg_rest_catalog',
+    materialized = 'table'
+)}}
+
 with orders as (
-    select * from fct_orders
+    select * from {{ ref('xplat_foundation', 'fct_orders') }}
 ),
 
 final as (
     select 
         location_name,
         tax_rate,
-        sum(tax_paid) as total_tax_paid,
+        sum('tax_paid'::number(5,2)) as total_tax_paid,
         count(order_id) as order_count
     from orders
     group by 1,2
