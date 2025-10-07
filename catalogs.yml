@@ -1,0 +1,11 @@
+catalogs:
+  - name: coalesce_cross_platform_mesh_iceberg
+    active_write_integration: snowflake_write_integration
+    write_integrations:
+      - name: snowflake_write_integration
+        catalog_name: databricks_rest_catalog_v6
+        external_volume: iceberg_databricks_us_west_2
+        table_format: iceberg
+        catalog_type: iceberg_rest
+        adapter_properties:
+          catalog_linked_database: coalesce_cross_platform_mesh_iceberg
