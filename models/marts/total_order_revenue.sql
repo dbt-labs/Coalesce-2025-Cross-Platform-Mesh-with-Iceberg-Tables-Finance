@@ -10,8 +10,8 @@ with orders as (
 
 agg as (
     select 
-        ordered_at,
-        sum(order_total) as order_revenue 
+        "ordered_at",
+        sum("order_total") as order_revenue 
     from orders 
     group by 1
 )
