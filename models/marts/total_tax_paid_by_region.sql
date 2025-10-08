@@ -10,10 +10,10 @@ with orders as (
 
 final as (
     select 
-        location_name,
-        tax_rate,
-        sum('tax_paid'::number(5,2)) as total_tax_paid,
-        count(order_id) as order_count
+        "location_name",
+        "tax_rate",
+        sum("tax_paid"::number(5,2)) as total_tax_paid,
+        count("order_id") as order_count
     from orders
     group by 1,2
 )
