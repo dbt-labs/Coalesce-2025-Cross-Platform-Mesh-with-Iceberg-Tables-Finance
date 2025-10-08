@@ -27,7 +27,6 @@ quoting:
   database: false
   schema: true
   identifier: true
-  # snowflake_ignore_case: true
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -44,3 +43,5 @@ models:
     # Applies to all files under models/marts/
     marts:
       +materialized: table
+      +access: public
+      +catalog_name: iceberg_rest_catalog
