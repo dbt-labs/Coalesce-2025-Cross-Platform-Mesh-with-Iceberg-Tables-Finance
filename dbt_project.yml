@@ -23,11 +23,6 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-quoting:
-  database: false
-  schema: true
-  identifier: true
-
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -43,5 +38,3 @@ models:
     # Applies to all files under models/marts/
     marts:
       +materialized: table
-      +access: public
-      +catalog_name: iceberg_rest_catalog
