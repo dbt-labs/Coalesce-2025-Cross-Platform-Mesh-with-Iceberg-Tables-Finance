@@ -1,5 +1,5 @@
 with orders as (
-    select * from {{ ref('xplat_foundatoin', 'fct_orders') }}
+    select * from {{ ref('xplat_foundation', 'fct_orders') }}
 ),
 
 agg as (
