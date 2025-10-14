@@ -44,5 +44,5 @@ models:
 
 quoting:
   database: false
-  schema: false
+  schema: true
   identifier: true
