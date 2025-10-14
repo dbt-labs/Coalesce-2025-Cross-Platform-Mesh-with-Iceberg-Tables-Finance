@@ -1,3 +1,4 @@
+catalogs:
   - name: iceberg_rest_catalog
     active_write_integration: databricks_rest_catalog
     write_integrations: 
