@@ -41,3 +41,8 @@ models:
       +access: public
       +catalog_name: iceberg_rest_catalog
       
+
+  quoting:
+    database: false
+    schema: true
+    identifier: true
