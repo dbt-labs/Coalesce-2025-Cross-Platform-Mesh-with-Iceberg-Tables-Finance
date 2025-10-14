@@ -36,10 +36,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   finance:
     # Applies to all files under models/marts/
-    marts:
-      +materialized: table
-      +access: public
-      +catalog_name: iceberg_rest_catalog
+  marts:
+    +materialized: table
+    +access: public
+    +catalog_name: iceberg_rest_catalog
 
 quoting:
   database: false
