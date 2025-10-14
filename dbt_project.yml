@@ -38,3 +38,6 @@ models:
     # Applies to all files under models/marts/
     marts:
       +materialized: table
+      +access: public
+      +catalog_name: iceberg_rest_catalog
+      
