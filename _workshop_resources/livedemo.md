@@ -1,6 +1,7 @@
 # Live Demo
 Learn more: [dbt project dependencies](https://docs.getdbt.com/docs/mesh/govern/project-dependencies), [Iceberg catalogs](https://docs.getdbt.com/docs/mesh/iceberg/about-catalogs), [Snowflake catalog integrations](https://docs.getdbt.com/docs/mesh/iceberg/snowflake-iceberg-support).
 
+
 ## Cross-Project Dependencies
 Add the `projects:` configuration to `dependencies.yml` file. 
 
