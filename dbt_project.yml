@@ -4,6 +4,9 @@
 name: 'finance'
 version: '1.0.0'
 config-version: 2
+ 
+
+
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
@@ -38,3 +41,10 @@ models:
     # Applies to all files under models/marts/
     marts:
       +materialized: table
+      +access: public
+      +catalog_name: iceberg_rest_catalog
+
+quoting:
+  database: false
+  schema: true
+  identifier: true
