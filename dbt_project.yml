@@ -45,4 +45,4 @@ models:
       +materialized: table
       +file_format: iceberg
       +access: public
-      +catalog_name: iceberg_rest_catalog
+      +catalog: iceberg_rest_catalog
