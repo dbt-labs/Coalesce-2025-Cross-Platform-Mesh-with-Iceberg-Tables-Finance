@@ -43,6 +43,6 @@ models:
     # Applies to all files under models/marts/
     marts:
       +materialized: table
-      +file_format: iceberg
       +access: public
-      +catalog: coalesce_cross_platform_mesh_iceberg
+      +file_format: iceberg
+      +catalog: iceberg_rest_catalog
