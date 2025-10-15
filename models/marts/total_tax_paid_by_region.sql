@@ -1,5 +1,5 @@
 with orders as (
-    select * from {{ ref('project_or_package', 'model_name') }}
+    select * from {{ ref('xplat_foundation', 'fct_orders') }}
 ),
 
 final as (
