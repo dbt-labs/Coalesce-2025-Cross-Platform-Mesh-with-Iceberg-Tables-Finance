@@ -44,5 +44,4 @@ models:
     marts:
       +materialized: table
       +access: public
-      +file_format: iceberg
       +catalog_name: iceberg_rest_catalog
