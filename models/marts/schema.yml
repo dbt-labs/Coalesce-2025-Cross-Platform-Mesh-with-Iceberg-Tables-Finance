@@ -1,0 +1,10 @@
+models:
+  - name: total_order_revenue
+    config:
+      catalog_name: iceberg_rest_catalog
+  - name: total_orders_by_region
+    config:
+      catalog_name: iceberg_rest_catalog
+  - name: total_taxes_paid_by_region
+    config:
+      catalog_name: iceberg_rest_catalog
