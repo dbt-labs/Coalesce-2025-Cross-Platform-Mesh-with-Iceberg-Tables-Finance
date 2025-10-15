@@ -44,4 +44,4 @@ models:
     marts:
       +materialized: table
       +access: public
-      +catalog: iceberg_rest_catalog
+      +catalog: coalesce_cross_platform_mesh_iceberg
