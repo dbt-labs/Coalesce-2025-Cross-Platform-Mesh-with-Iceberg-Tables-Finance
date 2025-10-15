@@ -43,6 +43,6 @@ models:
       +catalog_name: iceberg_rest_catalog
 
 quoting:
-  database: true
+  database: false
   schema: true
   identifier: true
