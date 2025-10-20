@@ -30,6 +30,7 @@ catalogs:
     write_integrations: 
       - name: databricks_rest_catalog
         external_volume: iceberg_databricks_us_west_2
+        table_format: iceberg
         catalog_type: iceberg_rest
         adapter_properties:
           catalog_linked_database: coalesce_cross_platform_mesh_iceberg
