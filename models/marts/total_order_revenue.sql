@@ -1,3 +1,9 @@
+{{ config(
+    materialized = 'table',
+    access = 'public',
+    catalog_name = 'iceberg_rest_catalog'
+) }}
+
 with orders as (
     select * from {{ ref('xplat_foundation','fct_orders') }}
 ), 
